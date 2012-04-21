@@ -1,4 +1,3 @@
-
 package de.MRTeam.MinecartRevolution.action;
 
 import org.bukkit.Location;
@@ -160,7 +159,6 @@ public class BlockPlaceAction implements Listener {
     private void noPermissions(Location location, Player player, BlockPlaceEvent event) {
 
         MinecartRevolution.messagesUtil.sendMessage(player, MinecartRevolution.messagesUtil.getMessage("noPermission", ""), true);
-        location.getBlock().breakNaturally();
 
         event.setCancelled(true);
     }
